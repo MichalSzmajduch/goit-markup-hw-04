@@ -17,6 +17,10 @@
 .contact:hover,
 .contact:focus {
   color: var(--logo-color);
+  fill: var(--logo-color);
+}
+.contact-icon {
+  fill: var(--second-text-color);
 }
 
 :root {
@@ -29,6 +33,7 @@
   --secondary-bacground-color: #2f303a;
   --border-color: #ececec;
   --team-background: #f5f4fa;
+  --icon-color: #afb1b8;
 }
 
 .header-logo {
@@ -41,6 +46,19 @@
 }
 .logo-color {
   color: var(--logo-color);
+}
+.mail-div {
+  height: 16px;
+  margin: 8px 30px 7px 345px;
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+.tel-div {
+  height: 16px;
+  margin: 8px 30px 7px 0px;
+  justify-content: center;
+  align-items: center;
 }
 .header-link {
   text-decoration: none;
@@ -57,8 +75,14 @@
   line-height: 1.17;
 }
 .secondary-background {
-  background-color: var(--secondary-bacground-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/goit-markup-hw-04/images/main-background.jpg);
+  max-width: 1600px;
 }
+
 .header {
   color: var(--third-text-color);
   font-size: 44px;
@@ -152,7 +176,7 @@
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
 }
 .logo-box {
   display: flex;
@@ -187,14 +211,17 @@
   display: flex;
   flex-direction: row;
   width: 254px;
-
   list-style-type: none;
   justify-content: center;
   align-items: center;
-
   padding-left: 0px;
   margin: 0;
 }
+
+.space-icon {
+  margin-right: 10px;
+}
+
 .tel-box {
   width: 110px;
 
@@ -205,6 +232,7 @@
   margin: 0px;
   margin-top: 8px;
   margin-bottom: 7px;
+  margin-left: 10px;
 }
 
 .space-nav {
@@ -226,7 +254,7 @@
   justify-content: center;
   align-items: center;
   padding-left: 0px;
-  margin: 0px 50px 0px 371px;
+  margin: 8px 30px 7px 10px;
   margin-top: 8px;
   margin-bottom: 7px;
 }
@@ -267,20 +295,22 @@
   margin: 0px;
 }
 .footer-box {
-  display: block flex;
+  display: flex;
   flex-direction: row;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: 0 auto;
+  justify-content: center;
 }
 .logo-box-footer {
-  display: flex;
+  display: flex block;
   flex-direction: row;
   margin-bottom: 20px;
 }
 
 .footer-link {
   list-style-type: none;
-  display: flex;
+  display: flex block;
   flex-wrap: wrap;
   flex-direction: column;
   margin-top: 20px;
@@ -388,7 +418,106 @@
   justify-content: center;
   align-items: center;
   padding-left: 0px;
+  padding-bottom: 30px;
 }
 .margin-footer-link {
   margin-bottom: 9px;
+}
+.background-icon {
+  background-color: var(--team-background);
+  margin-bottom: 30px;
+}
+
+.social-icon {
+  margin: 12px;
+}
+.div:hover {
+  width: 44px;
+  height: 44px;
+  background-color: var(--button-background-color);
+  fill: var(--third-text-color);
+  border-radius: 50%;
+}
+.divone {
+  display: inline-flex;
+  flex-direction: row;
+  margin-right: 10px;
+  fill: var(--icon-color);
+}
+.client-icon {
+  width: 170px;
+  height: 92px;
+  display: inline-flex;
+  flex-direction: row;
+  margin-right: 30px;
+  padding: center;
+  fill: var(--icon-color);
+  border: solid var(--icon-color) 1px;
+  border-radius: 4px;
+  padding: 16px 32px 16px 32px;
+}
+.client-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.client-icon:hover {
+  fill: var(--button-background-color);
+  border-color: var(--button-background-color);
+}
+.footer-title {
+  color: var(--third-text-color);
+  margin: 0px;
+  display: flex;
+}
+.footer-icon-box {
+  display: inline-flex block;
+  justify-content: center;
+  margin-left: 70px;
+  padding-right: 863px;
+}
+.footer-icon-list {
+  list-style-type: none;
+  display: inline-flex;
+  flex-direction: row;
+  padding-left: 0px;
+  margin-top: 20px;
+}
+.footer-icon {
+  fill: var(--third-text-color);
+  background: #ffffff1a;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  display: flex;
+  padding: 12px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.footer-icon:hover {
+  width: 44px;
+  height: 44px;
+  background-color: var(--button-background-color);
+  border-radius: 50%;
+}
+.adres {
+  display: inline-block;
+  justify-content: center;
+}
+.portfolio-shadow:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.button-shadow:hover,
+.button-shadow:focus {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.xd {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 215px;
+  display: flex block;
+  justify-content: center;
 }
